@@ -59,10 +59,9 @@ export default function App() {
 
             {/* STEP 1: Add the profile information. */}
             <View style={styles.headerText}>
-              <Text style={styles.name}>Giovanni Pasillas</Text>
-              <Text style={styles.role}>Developer</Text>
-              <Text style={styles.location}>Jalisco, MX</Text>
-              <Text style={styles.name}>Pending</Text>
+              <Text style={styles.name}>Alex Rivera</Text>
+              <Text style={styles.role}>Mobile Developer</Text>
+              <Text style={styles.location}>Lisbon, Portugal</Text>
             </View>
           </View>
 
@@ -160,8 +159,8 @@ const styles = StyleSheet.create({
   headerRow: {
     flexDirection: 'row',
     alignItems: 'center',
-    marginTop: -48,
-    marginBottom: 18,
+    marginTop: -5,
+    marginBottom: -10,
   },
 
   avatarContainer: {
@@ -169,6 +168,7 @@ const styles = StyleSheet.create({
     height: 96,
     position: 'relative',
     marginRight: 14,
+    top: -40,
   },
 
   avatar: {
@@ -182,25 +182,29 @@ const styles = StyleSheet.create({
   headerText: {
     flex: 1,
     justifyContent: 'center',
+    margingTop: 8,
   },
 
   name: {
     fontSize: 22,
     fontWeight: '700',
     color: COLORS.text,
-    marginBottom: 3,
+    marginBottom: 0,
+    lineHeight: 26,
   },
 
   role: {
     fontSize: 14,
     fontWeight: '600',
     color: COLORS.primary,
-    marginBottom: 4,
+    marginBottom: 2,
+    lineHeight: 18,
   },
 
   location: {
     fontSize: 13,
     color: COLORS.muted,
+    lineHeight: 17,
   },
 
   bio: {
